@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page3.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/all.css">
+    <title>Exmouth-About</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">
+            <img src="./img/logo-removebg-preview.png" alt="logo">
+        </div>
+        <ul class="navbar_list">
+            <li class="navbar_item" id="click1"><i class="fa-sharp fa-solid fa-house"></i> <a href="#">HOME</a></li>
+            <li class="navbar_item"><i class="fa-sharp fa-solid fa-image"></i> <a href="#">ATTRACTION</a></li>
+            <li class="navbar_item"><i class="fa-sharp fa-solid fa-earth-americas"></i><a href="#">ABOUT US</a></li>
+            <li class="navbar_item" id="login_btn"><a href="#" id="btn_text" >LOGIN</a></li>
+        </ul>
+        <p class="content">
+           Discover deals Hotel & Resort in Exmouth
+        </p>
+        <div class="search">
+            
+            <input type="text" placeholder="Search your room you want">
+            <i class="fa-solid fa-magnifying-glass" id="search_btn"></i>
+            
+        </div>
+    </div>
+
+    <!-- Body part -->
+    <div class="body">
+        <h1 class="1st-tittle">OUR WOLRD IS YOUR PLAY GROUND</h1>
+        <ul class="box">
+            <li name="tab1" class="active" onclick="tabClicked(this)">INFORMATION ABOUT US</li>
+            <li name="tab2"onclick="tabClicked(this)">OVER VIEW</li>
+            <li name="tab3"onclick="tabClicked(this)">FEES AND POLICIES</li>
+        </ul>
+        <div class="tabcontent">
+            <div class="information active" id="tab1">
+                <h2>INFORMATION ABOUT THIS AREA</h2>
+                <p style="font-weight: bold; font-size: large;"><i class="fa-solid fa-location-dot"></i> Vicinity</p><br>
+                <p>- 35 min drive from Exeter Cathedral</p><br>
+                <p>- 45-minute drive from Dartmoor National Park</p><br>
+                <p>- 54-minute drive from Princess Theater</p>
+                <br><br>
+                <p style="font-weight: bold; font-size: large;"><i class="fa-solid fa-car"></i> Go</p><br>
+                <p>- Exeter (EXT-Exeter Intl.) is a 29-minute drive away, approximately 18.9 km</p><br>
+                <p>- 10 min walk from Exmouth Station, about 0.8 km</p><br>
+                <p>- 9-minute drive from Exeter Exton Station, about 7.4 km</p><br>
+                <p>- 9-minute drive from Lympstone Commando Station, about 7.2 km</p>
+                <p class="arrow" style="font-size: 200%;"><i class="fa-sharp fa-solid fa-right-long"></i></p>
+            </div>
+            <!-- prototype-1 -->
+            <div class="information" id="tab2">
+                <h2>OVERVIEW</h2>
+                <p style="font-weight: bold; font-size: large; padding-left: 50px;">Check-in/Check-out</p><br>
+                <p>- Check-in time starts at 15:00</p><br>
+                <p>- Check-out time is 11:00</p><br>
+                <br>
+                <p style="font-weight: bold; font-size: large; padding-left: 50px;">Need to provide ipon check-in</p><br>
+                <p>- Fee deposit required by credit card, debit card or cash</p><br>
+                <p>- A valid photo identification (ID) may be required</p><br>
+                <br>
+                <p style="font-weight: bold; font-size: large; padding-left: 50px;">Limits related to your trip</p><br>
+                <p>- Check COVID-19</p>
+                <p class="arrow" style="font-size: 200%;"><i class="fa-sharp fa-solid fa-right-long"></i></p>
+            </div>
+            <!-- prototype-2 -->
+            <div class="information" id="tab3">
+                <h2>Fees and Policies</h2>
+                <p style="font-weight: bold; font-size: large; padding-left: 50px;">Disinfect & Sanitize</p><br>
+                <p>The property states that it is taking enhanced hygiene and guest safety measures.</p><br><br>
+                <p>- Sanitize the accommodation with a disinfectant solution; High-touch surfaces are cleaned with disinfectant between stays and sheets and towels are washed at a minimum temperature of 60°C.</p><br>
+                <p>- Personal protective equipment is available for guests, including masks.</p><br>
+                <p>- Contactless check-in and contactless check-out are available.</p><br>
+                <p>- Enhanced safety measures are in place for food service.</p><br>
+                <p>- The property confirms cleaning and disinfection practices are in place in accordance with COVID-19 Guidelines (CDC).</p>
+                <p class="arrow" style="font-size: 200%;"><i class="fa-sharp fa-solid fa-right-long"></i></p>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottom1">
+                <p style="font-weight: 700;">NOW WE ARE AVAILABLE IN APPSTORE AND GOOGLE PLAY</p>
+                <p style="font-weight: 700;">DOWNLOAD & GET THE VOUCHER UP TO 30% FROM US</p>
+                <img src="./img/appstore-dl-btn.png" alt="#">
+                <img src="./img/google-dl-btn.png" alt="#">
+                <p>How would you rate your experience?</p>
+                <div class="rating-star">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div> 
+                <br>
+                <p>Please tell us about your experience: </p>
+                <form action="#" class="feedback">
+                    <!-- <input type="text"> -->
+                    <textarea name="feedback" id="feedback" cols="35" rows="5" style="border-radius: 5px;"></textarea>
+                </form>
+                <br>
+                <label for="email">Your email (optional):</label><br>
+                <input placeholder="Enter your email" style="width: 300px; border-radius: 5px;" type="email" id="email" name="email">
+                <input id="send-btn" type="submit" value="Send">
+            </div>
+            <div class="bottom2">
+                <img src="./img/mbl-app-1.png" alt="#" width="150px">
+                <img id="mbl-img-1" src="./img/mbl-app-2.png" alt="#" width="150px">
+            </div>
+        </div>
+        <h2 style="width: 100%; text-align: center; margin-top: 60px;">ABOUT US</h2>
+        <div class="abt-us">
+            <div>
+                <img src="./img/service team.jpg" alt="#">
+                <h3>Professional service team</h3>
+                <p>The professional service team of Exmouth View Hotel has been rigorously trained to the 5-star standard to provide the most satisfying service to guests.</p>
+            </div>
+            <div>
+                <img src="./img/serviceRoom.png" alt="#">
+                <h3>Excellent quality of infrastructure</h3>
+                <p>Comfortable rooms and standard dining and travel services will definitely not disappoint you</p>
+            </div>
+            <div>
+                <img src="./img/entertain.png" alt="#">
+                <h3>Variety of  entertainment methods</h3>
+                <p>Long beaches,swimming pools, cinemas, ancient villages, mountain scenery, sports... Exmouth View Hotel is a place for you to relax after tiring working days.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="left_footer">
+            <img src="./img/logo2.png" alt="logo2">
+            <p class="content1">Let’s be relaxed after tired days with us- Exmouth View Hotel</p>
+            <p class="contact">Contact Us</p>
+            <div class="social_network">
+                <i class="fa-brands fa-square-facebook fa-beat"></i>
+                <i class="fa-brands fa-instagram fa-beat"></i>
+                <i class="fa-brands fa-twitter fa-beat"></i>
+            </div>
+        </div>
+
+        <div class="right_footer">
+            <p>Email Us</p>
+            <div class="email">
+                <input type="text" placeholder="Type your email here to contact us">
+                <button>Send</button>
+            </div>
+            <div class="link">
+                <div class="link_item">
+                    <p>Helpful Links</p>
+                    <ul>
+                        <li><a href="#">Rooms</a></li>
+                        <li><a href="#">Combo</a></li>
+                        <li><a href="#">Details</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </div>
+                <div class="link_item">
+                    <p>Learn More</p>
+                    <ul>
+                        <li><a href="#">Map</a></li>
+                        <li><a href="#">Weather</a></li>
+                        <li><a href="#">Roads</a></li>
+                        <li><a href="#">Others</a></li>
+                    </ul>
+                </div>
+                <div class="link_item">
+                    <p>Legal</p>
+                    <ul>
+                        <li><a href="#">Term & Conditions</a></li>
+                        <li><a href="#">Polices</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info">
+                <p>COPYRIGHT © 2010 Exmouth View Hote <br> Address: Exmouth, EX8 4QD, UK</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const tabHeader=document.querySelector('.box')
+        const tabContent=document.querySelector('.tabcontent')
+        function tabClicked(element){
+            let activedElement=tabHeader.querySelector('.active')
+            let activedTab=tabContent.querySelector('.active')
+            let elementName=element.getAttribute('name')
+            let displayTab=tabContent.querySelector(`#${elementName}`)
+
+            activedElement.classList.remove('active')
+            activedTab.classList.remove('active')
+            element.classList.add('active')
+            displayTab.classList.add('active')
+        }
+
+        document.getElementById("click1").addEventListener("click", function() {
+        window.location.href = "index.html";
+    });
+    </script>
+</body>
+</html>

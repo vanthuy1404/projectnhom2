@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Booking Online</title>
+        <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/all.css">
+        <link rel="stylesheet" href="booking.css">
+    </head>
+
+    <body>
+        <div class="booking">
+            <div class="left">
+                <img src="./img/booking-img.png" alt="book">
+            </div>
+            <div class="right">
+                <img src="./img/logo-removebg-preview.png" alt="logo">
+                <h2>Online Booking</h2>
+                <p class="desc"><i>Please fill out the information bellow to complete your online reservation!</i></p>
+                <form action="booking.php" id="form1">
+                    <p id="name">Name*</p>
+                    <div class="name">
+                        <input type="text" class="input_name" placeholder="First Name" required>
+                        <input type="text" class="input_name" placeholder="Last Name"required>
+                    </div>
+                    <div class="contact">
+                        <div class="phone">
+                            <p>Phone*</p>
+                            <input type="number" class="item_input" placeholder="(+84)" required>
+                        </div>
+                        <div class="email">
+                            <p>Email*</p>
+                            <input type="email" class="item_input" placeholder="abc@example.com" required> 
+                        </div>
+                    </div>
+                    <div class="check">
+                        <p>Check in*</p>
+                        <input type="datetime-local" required>
+                        <p>Check out*</p>
+                        <input type="datetime-local"required >
+                    </div>
+                    <div class="Payment">
+                        <p>Choose payment method:</p>
+                        <input type="checkbox" name="check" >
+                        <i class="fa-brands fa-paypal" style="color: #005eff;"></i>
+                        <input type="checkbox" name="check" >
+                        <i class="fa-brands fa-cc-visa" style="color: #478bff;"></i>
+                        <input type="checkbox" name="check" >
+                        <i class="fa-brands fa-bitcoin" style="color: #e6de00;"></i>
+                    </div>
+                    <div class="choose">
+                        <div class="choose_room">
+                            <label for="room">Type of room*:</label>
+                            <input list="browsers" name="browser" id="room" required>
+                            <datalist id="browsers">
+                                <option value="Double rom">
+                                <option value="Single room">
+                                <option value="Tripple bedroom">
+                                <option value="Private room">
+                                <option value="Suite Room">
+                            </datalist>
+                        </div>
+                        <div class="amount">
+                            <label for="room_number">Number of rooms:</label>
+                            <input type="number" min="1" id="room_number">
+                        </div>
+                    </div>
+                    <p class="prepay">Prepayment: 100$</p>
+                    <input type="submit" value="Submit" class="submit">
+                </form>
+                
+            </div>
+        </div>
+        <script>
+            const form = document.getElementById('form1');
+
+            form.addEventListener('submit', function(event) {
+            event.preventDefault(); // ngăn form gửi đi
+
+            alert('Book successfully'); // hiển thị thông báo
+
+            history.back(); // quay về trang trước
+            });
+
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach((checkbox) => {
+            checkbox.addEventListener('change', () => {
+                checkboxes.forEach((cb) => {
+                if (cb !== checkbox) {
+                    cb.checked = false;
+      }
+    });
+  });
+});
+        </script>
+    </body>
+   
+</html>

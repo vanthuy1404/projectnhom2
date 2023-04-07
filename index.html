@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Home-Exmouth View Hotel</Title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="page1update.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/all.css">
+    </head>
+    <body>
+        <!--HEADER-->
+        <div class="header" id="header">
+            <div class="logo">
+                <img src="./img/logo-removebg-preview.png" alt="logo">
+            </div>
+            <ul class="navbar_list">
+                <li class="navbar_item"><i class="fa-sharp fa-solid fa-house"></i> <a href="#">HOME</a></li>
+                <li class="navbar_item" id="click1"><i class="fa-sharp fa-solid fa-image"></i> <a href="#">ATTRACTION</a></li>
+                <li class="navbar_item" id="click2"><i class="fa-sharp fa-solid fa-earth-americas"></i><a href="#">ABOUT US</a></li>
+                <li class="navbar_item" id="login_btn"><button id="login_btn">LOGIN</button></li>
+            </ul>
+            <p class="content">
+               Discover deals Hotel & Resort in Exmouth
+            </p>
+            <div class="search">
+                <input type="text" placeholder="Search your room you want">
+                <i class="fa-solid fa-magnifying-glass" id="search_btn"></i>
+            </div>
+        </div>
+
+        <!--INTRODUCTION-->
+
+        <div class="introduction">
+            <p class="title">STAY LONGER, SAVE MORE</p>
+            <img src="./img/hotel introduction 1.jpg" alt="hotel introduction 1" class="introduction_img1">
+            <p class="introduction_content"><i> A traditional family run hotel offering affordable accommodation with excellent quality home cooked food.
+                    Come have a relaxing weekend at Exmouth View Hotel! You will find our rooms comfy and our staff ready to meet your every need. You'll want to return again and again! It's your home, away from home!</i>
+                </p>
+            <img src="./img/hotel introduction 2.avif" alt="hotel introduction 2"class="introduction_img2">
+        </div>
+
+        <!--ROOM-->
+
+        <div class="room">
+            <div class="room_navbar">
+                <p class="heading">ROOMS</p>
+                <ul class="navbar_roomlist">
+                    <li name="div1" class="active" onclick="tabClicked(this)">Trending</li>
+                    <li name="div2" onclick="tabClicked(this)" >All Rooms</li>
+                    <li name="div3">Big Discount</li>
+                    <li name="div4">Others</li>
+                </ul>
+            </div>
+            <div class="block">
+                <div id="div1" class="tab active">
+                    <div class="room_item">
+                        <img src="./img/oceanviewroom.jpg" alt="room1" class="room_img">
+                        <p class="room_name">Oceanview Room</p>
+                        <p class="room_desc"><i>What better way to end a long day then to sit in your beautiful room and look out the window at one of the most gorgeous views there is in the world, the vast, blue ocean. Our service brings you the most wonderful and interesting experiences that make the fatigue and sadness after your hard working days disappear.</i></p>
+                        <p class="room_price">Price: 150$/1day 1 night</p>
+                        <button class="room_book">BOOK NOW</button>
+                    </div>
+                    <div class="room_item">
+                        <img src="./img/private room.jpg" alt="room2" class="room_img">
+                        <p class="room_name">Private Room</p>
+                        <p class="room_desc"><i>With an area of 75 square meters, the private room gives you a relaxing space with full amenities, designed in classical architecture combined with green garden that makes you seem to be immersed in nature.</i></p>
+                        <p class="room_price">Price: 270$/1day 1 night</p>
+                        <button class="room_book">BOOK NOW</button>
+                    </div>
+                    <div class="room_item">
+                        <img src="./img/ancient room.jpeg" alt="room3" class="room_img">
+                        <p class="room_name">Ancient Room</p>
+                        <p class="room_desc"><i>Ancient rooms were built with the use of sun-dried clay bricks. Wooden structures were also utilized for the frameworks and then filled with straw or seaweed. With no modern inventions, we relied on architectural choices to stay cool in the summer, but also to remain warm in the winter when temperatures dropped considerably.</i></p>
+                        <p class="room_price">Price: 350$/1day 1 night</p>
+                        <button class="room_book">BOOK NOW</button>
+                    </div>
+                    <div class="room_item">
+                        <img src="./img/double room.jpg" alt="room3" class="room_img">
+                        <p class="room_name">Double Room</p>
+                        <p class="room_desc"><i>Small yet elegant, it is a comfortable room for those looking to save, a little on accomodation! The room in this category are 15 m2, feature a 160cm queen bed and a private bathroom with hairdryer.
+                            These rooms all have a flat screen TV, a safety deposite box, free WIFI</i></p>
+                        <p class="room_price">Price: 400$/1day 1 night</p>
+                        <button class="room_book">BOOK NOW</button>
+                    </div>
+                    <div class="room_item">
+                        <p class="special"><i>Discount</i></p>
+                        <div class="wrapper">
+                            <div class="discount">
+                                <div class="line"></div>
+                                <p class="percent">15%</p>
+                                <p class="percent_desc">STAY 2 NIGHTS OR MORE</p>
+                                <a href="#">Details</a>
+                            </div>
+                            <div class="discount">
+                                <div class="line"></div>
+                                <p class="percent">25%</p>
+                                <p class="percent_desc">STAY 4 NIGHTS OR MORE</p>
+                                <a href="#">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="div2" class="tab">
+                    <div class="room_item">
+                        <img src="./img/single room.png" alt="room1" class="room_img">
+                        <p class="room_name">Single Room</p>
+                        <p class="room_desc"><i>Single room is assigned to one person or a couple. It has a twin bed or a queen bed based on your choice.</i></p>
+                        <p class="room_price">Price: 150$/1day 1 night</p>
+                        <button class="room_book">BOOK NOW</button>
+    
+                        <img src="./img/double room2.png" alt="room1" class="room_img1">
+                        <p class="room_name1">Double Room</p>
+                        <p class="room_desc1"><i>Double rooms are a great choice for couples on vacation. It is fully equipped with amenities and romantic spaces ready for you to join and relax.</i></p>
+                        <p class="room_price1">Price: 220$/1day 1 night</p>
+                        <button class="room_book1">BOOK NOW</button>
+                    </div>
+                    <div class="room_item">
+                        <img src="./img/private room.jpg" alt="room1" class="room_img">
+                        <p class="room_name">Private Room</p>
+                        <p class="room_desc"><i>The private room gives you a relaxing space with full amenities, combined with green garden that makes you seem to be immersed in nature.</i></p>
+                        <p class="room_price">Price: 270$/1day 1 night</p>
+                        <button class="room_book">BOOK NOW</button>
+    
+                        <img src="./img/suite room.png" alt="room1" class="room_img1">
+                        <p class="room_name1">Suite Room</p>
+                        <p class="room_desc1"><i>Suite room comes with a separate living space connected two bedroom with impressive amenities, decoration and tailor-made service.</i></p>
+                        <p class="room_price1">Price: 400$/1day 1 night</p>
+                        <button class="room_book1">BOOK NOW</button>
+                    </div>
+                    <div class="room_item">
+                        <img src="./img/ancient room.jpeg" alt="room1" class="room_img">
+                        <p class="room_name">Ancient Room</p>
+                        <p class="room_desc"><i>Wooden structures were also utilized for the frameworks and then filled with straw or seaweed. We relied on architectural choices to stay cool in the summer.</i></p>
+                        <p class="room_price">Price: 350$/1day 1 night</p>
+                        <button class="room_book">BOOK NOW</button>
+    
+                        <img src="./img/connecting room.jpg" alt="room1" class="room_img1">
+                        <p class="room_name1">Connecting Room</p>
+                        <p class="room_desc1"><i>It have a connecting door between them and individual doors to get to the outside.</i></p>
+                        <p class="room_price1">Price: 350$/1day 1 night</p>
+                        <button class="room_book1">BOOK NOW</button>
+                    </div>
+                    <div class="room_item">
+                        <img src="./img/deluxe room.jpg" alt="room1" class="room_img">
+                        <p class="room_name">Deluxe Room</p>
+                        <p class="room_desc"><i>This type of room is usually on the upper floor with better quality than others. Deluxe room has a large area, has a beautiful view with high-class equipment.</i></p>
+                        <p class="room_price">Price: 420$/1day 1 night</p>
+                        <button class="room_book">BOOK NOW</button>
+    
+                        <img src="./img/tripple room.jpg" alt="room1" class="room_img1">
+                        <p class="room_name1">Triple bed Room</p>
+                        <p class="room_desc1"><i>Room with 3 small beds or 1 large bed + 1 small bed for 3 people.</i></p>
+                        <p class="room_price1">Price: 300$/1day 1 night</p>
+                        <button class="room_book1">BOOK NOW</button>
+                    </div>
+                    <div class="room_item">
+                        <p class="special"><i>Discount</i></p>
+                        <div class="wrapper">
+                            <div class="discount">
+                                <div class="line"></div>
+                                <p class="percent">15%</p>
+                                <p class="percent_desc">STAY 2 NIGHTS OR MORE</p>
+                                <a href="#">Details</a>
+                            </div>
+                            <div class="discount">
+                                <div class="line"></div>
+                                <p class="percent">25%</p>
+                                <p class="percent_desc">STAY 4 NIGHTS OR MORE</p>
+                                <a href="#">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--FOOTER-->
+        <div class="footer">
+            <div class="left_footer">
+                <img src="./img/logo2.png" alt="logo2">
+                <p class="content1">Let’s be relaxed after tired days with us- Exmouth View Hotel</p>
+                <p class="contact">Contact Us</p>
+                <div class="social_network">
+                    <i class="fa-brands fa-square-facebook fa-beat"></i>
+                    <i class="fa-brands fa-instagram fa-beat"></i>
+                    <i class="fa-brands fa-twitter fa-beat"></i>
+                </div>
+            </div>
+
+            <div class="right_footer">
+                <p>Email Us</p>
+                <div class="email">
+                    <input type="text" placeholder="Type your email here to contact us">
+                    <button>Send</button>
+                </div>
+                <div class="link">
+                    <div class="link_item">
+                        <p>Helpful Links</p>
+                        <ul>
+                            <li><a href="#">Rooms</a></li>
+                            <li><a href="#">Combo</a></li>
+                            <li><a href="#">Details</a></li>
+                            <li><a href="#">Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="link_item">
+                        <p>Learn More</p>
+                        <ul>
+                            <li><a href="#">Map</a></li>
+                            <li><a href="#">Weather</a></li>
+                            <li><a href="#">Roads</a></li>
+                            <li><a href="#">Others</a></li>
+                        </ul>
+                    </div>
+                    <div class="link_item">
+                        <p>Legal</p>
+                        <ul>
+                            <li><a href="#">Term & Conditions</a></li>
+                            <li><a href="#">Polices</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info">
+                    <p>COPYRIGHT © 2010 Exmouth View Hote <br> Address: Exmouth, EX8 4QD, UK</p>
+                </div>
+            </div>
+        </div>
+        <script src="page1.js"></script>
+        <script src="firebase.js"></script>
+    </body>
+</html>

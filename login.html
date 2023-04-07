@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login-form.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/all.css">
+    <title>Exmouth-Login</title>
+</head>
+<body>
+    <div class="container">
+        <div><img class="big-img" src="./img/login-img.png" alt="#"></div>
+        <div class="content">
+            <img src="./img/logo-removebg-preview.png" alt="#">
+            <h2>LOGIN</h2>
+            <ul>
+                <li id="fb"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li id="ig"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li id="tw"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+            <p class="use-account">or use your account</p>
+            <form action="login.php">
+                <input type="email" name="email" placeholder="Email" id="username" required><br>
+                <div id="usernameError" style="color: red; font-size: 14px; font-weight: 200;display: none;"><i>Please fill in the blank!</i></div>
+                <input type="password" placeholder="Password" id="password" required>
+                <div id="passwordError" style="color: red; font-size: 14px; font-weight: 200;display: none;"><i>Please fill in the blank!</i></div>
+                <p class="forgot-pass"><a href="#">Forgot your password?</a><br></p>
+                <button class="sign-in" type="submit" id="submit-button">LOGIN</button>
+           
+            </form>
+            <p class="register">You don't have an account, <a href="#">Register now</a></p>
+        </div>
+    </div>
+    <script>
+        const usernameInput = document.getElementById("username");
+        const usernameError = document.getElementById("usernameError");
+        const passwordInput = document.getElementById("password");
+        const passwordError = document.getElementById("passwordError");
+      
+        usernameInput.addEventListener("focus", function() {
+          usernameError.style.display = "none";
+        });
+      
+        usernameInput.addEventListener("blur", function() {
+          if (usernameInput.value === "") {
+            usernameError.style.display = "block";
+          } else {
+            usernameError.style.display = "none";
+          }
+        });
+      
+        passwordInput.addEventListener("focus", function() {
+          passwordError.style.display = "none";
+        });
+      
+        passwordInput.addEventListener("blur", function() {
+          if (passwordInput.value === "") {
+            passwordError.style.display = "block";
+          } else {
+            passwordError.style.display = "none";
+          }
+        });
+      </script>
+</body>
+</html>

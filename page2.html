@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Home-Exmouth View Hotel</Title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="page2.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/all.css">
+    </head>
+    <body>
+        <!--HEADER-->
+        <div class="header" id="header">
+            <div class="logo">
+                <img src="./img/logo-removebg-preview.png" alt="logo">
+            </div>
+            <ul class="navbar_list">
+                <li class="navbar_item"><i class="fa-sharp fa-solid fa-house"></i> <a href="#">HOME</a></li>
+                <li class="navbar_item"><i class="fa-sharp fa-solid fa-image"></i> <a href="#">ATTRACTION</a></li>
+                <li class="navbar_item" id="click2"><i class="fa-sharp fa-solid fa-earth-americas"></i><a href="#">ABOUT US</a></li>
+                <li class="navbar_item" id="login_btn"><button id="login_btn">LOGIN</button></li>
+            </ul>
+            <p class="content">
+               Discover deals Hotel & Resort in Exmouth
+            </p>
+            <div class="search">
+                <input type="text" placeholder="Search your room you want">
+                <i class="fa-solid fa-magnifying-glass" id="search_btn"></i>
+            </div>
+        </div>  
+
+        <!--Attraction-->
+        <h2 class="heading">ATTRACTIONS</h2>
+        <p class="desc"><i>
+            There are some famous places to visit recommended for you</i></p>
+        <div class="attraction">
+            <div class="attraction_item">
+                <img src="./img/bygone.png" alt="bygone">
+                <div class="attraction_content">
+                    <h3>Bygone</h3>
+                    <p>In the village of St Marychurch close to Babbacombe, Bygones is open every day except Christmas Day, and in the summer open till 10pm in the week. Shop as our grandparents used to shop, go into a Victorian parlour,visit the illuminated Fantasy Land in miniature, see the scenic working model railway and climb into the cab of a real steam loco. Walk through a World War I trench.</p>
+                </div>
+            </div>
+            <div class="attraction_item">
+                <img src="./img/theatre.png" alt="bygone">
+                <div class="attraction_content">
+                    <h3>Babbacome Theatre</h3>
+                    <p>A Visit To Babbacombe Is Not Complete Without A Visit To
+                        BABBACOMBE THEATRE - 
+                        600 seat theatre - 
+                        Superb Variety Show Running From 10th February until 21st October
+                        Tuesday & Wednesday Evenings From 8:15 p.m.
+                        2015 Show "STARLIGHT"</p>
+                </div>
+            </div>
+            <div class="attraction_item">
+                <img src="./img/cooking village.png" alt="bygone">
+                <div class="attraction_content">
+                    <h3>Cookington Village</h3>
+                    <p>Open through the year to Christmas Eve, and with free admission, you can see how things used to be. Ride there from the sea front in a horse and carriage. Visit the stately Manor House, stroll through the gardens, watch the village blacksmith at work, eat at the Mill Restaurant with its working water wheel. An unchanged village from o Britain's most popular resorts.</p>
+                </div>
+            </div>
+            <div class="attraction_item">
+                <img src="./img/railway.png" alt="bygone">
+                <div class="attraction_content">
+                    <h3>Oddicombe Cliff Railway</h3>
+                    <p>It's well worth going down to Oddicombe beach, but it's quite a climb back up to Babbacombe. Try the Cliff Railway.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--Sport-->
+        <h2 class="heading">SPORTS</h2>
+        <p class="desc"><i>
+            The variety of sports is sure to make you pleasure</i></p>
+            <div class="sport">
+                <div class="sport_item">
+                    <img src="./img/sailingclub.png" alt="bygone">
+                    <div class="sport_content">
+                        <h3>Sailing CLub</h3>
+                        <p>If you don't own your own boat (yet!) we have a number of club dinghies for hire. We also have a growing kayak section if that's what you are looking for. We offer a range of RYA accredited dinghy training for adults and juniors with our own qualified Instructors as well as Power Boat and sailing theory courses. Off the water we have a wide ranging social programme all year round and we look forward to seeing you soon.</p>
+                    </div>
+                </div>
+                <div class="sport_item">
+                    <img src="./img/fishing.png" alt="fishing">
+                    <div class="sport_content">
+                        <h3>DeepSea Fishing</h3>
+                        <p>Four pages cram packed full of useful information if you want to take up shore fishing for the first time. With photos and detailed guides you'll find this pages perfect if you're coming down to Torbay to fish. If you're new to fishing you'll need to know how to tie the knots and make your own rigs! This is the place for you.</p>
+                    </div>
+                </div>
+                <div class="sport_item">
+                    <img src="./img/kite.png" alt="kite">
+                    <div class="sport_content">
+                        <h3>Kite Surfing & Kite Buggying</h3>
+                        <p>Feel the wind blowing in your face. Clear skies. Beautiful waters. A kick of adrenaline pumping through you.Those are just the top of the icing to the cake as to why you must try kitesurfing in Exmouth View Hotel</p>
+                    </div>
+                </div>
+                <div class="sport_item">
+                    <img src="./img/horse racing.png" alt="bygone">
+                    <div class="sport_content">
+                        <h3>Horse Racing</h3>
+                        <p>Nestling in a valley at the edge of historic Newton Abbot, the racecourse is impeccably presented, with friendly staff and a smiling face. The food and drink is the stuff of legend, with South West suppliers and delicious local produce, a day at Newton Abbot is a delight for young and old.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--Food & Drink combo-->
+            <h2 class="heading">FOOD AND DRINK COMBO</h2>
+            <p class="desc"> <i>Bring the taste you can't forever forget!</i></p>
+            <ul class="tablist">
+                <li name="tab1" class="active" onclick="tabClicked(this)">DINNER MENU</li>
+                <li name="tab2" onclick="tabClicked(this)">SOFT MEAL</li>
+                <li name="tab3" onclick="tabClicked(this)">DRINK</li>
+            </ul>
+
+            <div class="tab_container">
+                <div class="tab active" id="tab1" >
+                    <div class="head_content">
+                        <div class="menu_content">
+                            <img src="./img/starter.png" alt="" class="img1">
+                            <p class="head_name">Starter</p>
+                            <p class="menu_desc">The main purpose of having appetizers in a restaurant party is to keep customers hungry enough to wait until the main courses are served.</p>
+                        </div>
+
+                        <div class="menu_content">
+                            <img src="./img/maincourse.png" alt="" class="img1">
+                            <p class="head_name">Main course</p>
+                            <p class="menu_desc">The starter might delight the senses and the dessert satisfies the sweet tooth, but it’s the main course that we all look forward to the most.</p>
+                        </div>
+
+                        <div class="menu_content">
+                            <img src="./img/hotdresserts.png" alt="" class="img1">
+                            <p class="head_name">Hot Dresserts</p>
+                            <p class="menu_desc">For people who want hot desserts</p>
+                        </div>
+
+                        <div class="menu_content">
+                            <img src="./img/coldresserts.png" alt="" class="img1">
+                            <p class="head_name">Cold Dresserts</p>
+                            <p class="menu_desc">For people who want cold desserts</p>
+                        </div>
+                    
+                    </div>
+                    
+                    <p class="menu_header">MENU</p>
+                    <div class="menu_tab">
+                        <img src="./img/menu starter.png" alt="">
+                        <img src="./img/maincoursemenu.png" alt="">
+                        <img src="./img/hotdressertmenu.png" alt="">
+                        <img src="./img/coldresserts menu.png" alt="">
+
+                    </div>
+                    <div class="hotcb">
+                        <p class="hotcb_head">HOT COMBO FOR DINNER:</p>
+                        <div class="hotcb_content">
+                            <div class="hotcb_item">
+                                <p class="percent">15%</p>
+                                <p class="discount">discount for 
+                                    a five-member group <br> <a href="#">Details</a></p>
+                            </div>
+                            <div class="hotcb_item">
+                                <p class="percent">25%</p>
+                                <p class="discount">discount for 
+                                    a seven-member group<br> <a href="#">Details</a> </p>
+                            </div>
+                            <div class="hotcb_item">
+                                <p class="percent">35%</p>
+                                <p class="discount">discount for 
+                                    a ten-member group<br> <a href="#">Details</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab" id="tab2" >
+                    <div class="head_content">
+                        <div class="menu_content">
+                            <img src="./img/salad.png" alt="" class="img1">
+                            <p class="head_name">Salad</p>
+                            <p class="menu_desc">Made with the best green salad recipes, plus trusted recipes for more than 3,550 other dinner and picnic salads.</p>
+                        </div>
+
+                        <div class="menu_content">
+                            <img src="./img/chicken breast.png" alt="" class="img1">
+                            <p class="head_name">Chicken Breast</p>
+                            <p class="menu_desc">Served with choice of Chasseur Sauce, Mushroom Sauce or Spicy Barbecue Sauce</p>
+                        </div>
+
+                        <div class="menu_content">
+                            <img src="./img/snack.png" alt="" class="img1">
+                            <p class="head_name">Snack</p>
+                            <p class="menu_desc">Containing protein, fiber, and healthy fats, Snack helps you increase your intake of nutrient-rich foods.</p>
+                        </div>
+
+                        <div class="menu_content">
+                            <img src="./img/hamburger.png" alt="" class="img1">
+                            <p class="head_name">Hamburger</p>
+                            <p class="menu_desc">Healthy food That You Shouldn't forget to try</p>
+                        </div>
+                    
+                    </div>
+                    <div class="hotcb">
+                        <p class="hotcb_head">HOT COMBO FOR DINNER:<br>
+                        <p style="color: gray; font-size: 14px;text-align: center;margin-bottom: 10px;"><i>Free soft meals for everyone who enter The Exmouth View Hotel.</i></p>
+                        </p>
+                        <div class="hotcb_content">
+                            <div class="hotcb_item">
+                                <p class="percent">15%</p>
+                                <p class="discount">discount for 
+                                    a five-member group <br> <a href="#">Details</a></p>
+                            </div>
+                            <div class="hotcb_item">
+                                <p class="percent">25%</p>
+                                <p class="discount">discount for 
+                                    a seven-member group<br> <a href="#">Details</a> </p>
+                            </div>
+                            <div class="hotcb_item">
+                                <p class="percent">35%</p>
+                                <p class="discount">discount for 
+                                    a ten-member group<br> <a href="#">Details</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab" id="tab3">
+                    <div class="head_content">
+                        <div class="menu_content">
+                            <img src="./img/wine.png" alt="" class="img1">
+                            <p class="head_name">Wine</p>
+                            <p class="menu_desc">The Exmouth View Hotel has a lot types of wine as you want: Chivas,Macallan, Whisky Scotland,
+                                Cognac.....</p>
+                        </div>
+
+                        <div class="menu_content">
+                            <img src="./img/beer.png" alt="" class="img1">
+                            <p class="head_name">Beer</p>
+                            <p class="menu_desc">Beer is one of the most famous drinks in our hotel. We have a lot of types for your choses</p>
+                        </div>
+
+                        <div class="menu_content">
+                            <img src="./img/Soft drink.png" alt="" class="img1">
+                            <p class="head_name">Soft Drink</p>
+                            <p class="menu_desc">We know a lot of people like soft drinks but they are afraid of sugar of them. Don’t be worried, our soft drinks have no calorine and also be good for your health.</p>
+                        </div>
+
+                        <div class="menu_content">
+                            <img src="./img/icedjuice.png" alt="" class="img1">
+                            <p class="head_name">Iced Juice</p>
+                            <p class="menu_desc">Healthy Drinks That You Shouldn't forget to try</p>
+                        </div>
+                    </div>
+                    <div class="hotcb">
+                        <p class="hotcb_head">HOT COMBO FOR DRINK:</p>
+                        <div class="hotcb_content">
+                            <div class="hotcb_item">
+                                <p class="percent" style="color: #FF1414;">Beer</p>
+                                <p class="discount">300$ for a five-member group <br>600$ for a 12-member group <br> <a href="#">Details</a></p>
+                            </div>
+                            <div class="hotcb_item">
+                                <p class="percent" style="color: #867341;">Wine</p>
+                                <p class="discount">400$ for a five-member group <br>700$ for a 12-member group <br> <a href="#">Details</a></p>
+                            </div>
+                            <div class="hotcb_item">
+                                <p class="percent" style="color: #338731;">Juice And Soft Drink</p>
+                                <p class="discount">100$ for a five-member group <br>180$ for a 12-member group <br> <a href="#">Details</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--Special-->
+            <h2 class="special-combo">SPECIAL COMBO</h2>
+            <div class="special-combo-background">
+                <div class="outdoor-party">
+                    <h2><span style="color: #00FBFB;">OUT DOOR</span><span style="color: #CF1111;"> PARTY</span></h2>
+                    <p class="content1"><em>Enjoy the party with fresh atmosphere under the mistery light and we hope you are pleasant with our speacial foods and drinks</em></p>
+                    <p class="content2">Free: Wine, soft drink</p>
+                    <p class="content3">Price: <del style="color: rgba(0, 0, 0, 0.42);">1750$</del> 1600$</>
+                </div>
+            </div>
+             <!-- Footer -->
+    <div class="footer">
+        <div class="left_footer">
+            <img src="./img/logo2.png" alt="logo2">
+            <p class="content1">Let’s be relaxed after tired days with us- Exmouth View Hotel</p>
+            <p class="contact">Contact Us</p>
+            <div class="social_network">
+                <i class="fa-brands fa-square-facebook fa-beat"></i>
+                <i class="fa-brands fa-instagram fa-beat"></i>
+                <i class="fa-brands fa-twitter fa-beat"></i>
+            </div>
+        </div>
+
+        <div class="right_footer">
+            <p>Email Us</p>
+            <div class="email">
+                <input type="text" placeholder="Type your email here to contact us">
+                <button>Send</button>
+            </div>
+            <div class="link">
+                <div class="link_item">
+                    <p>Helpful Links</p>
+                    <ul>
+                        <li><a href="#">Rooms</a></li>
+                        <li><a href="#">Combo</a></li>
+                        <li><a href="#">Details</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </div>
+                <div class="link_item">
+                    <p>Learn More</p>
+                    <ul>
+                        <li><a href="#">Map</a></li>
+                        <li><a href="#">Weather</a></li>
+                        <li><a href="#">Roads</a></li>
+                        <li><a href="#">Others</a></li>
+                    </ul>
+                </div>
+                <div class="link_item">
+                    <p>Legal</p>
+                    <ul>
+                        <li><a href="#">Term & Conditions</a></li>
+                        <li><a href="#">Polices</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info">
+                <p>COPYRIGHT © 2010 Exmouth View Hote <br> Address: Exmouth, EX8 4QD, UK</p>
+            </div>
+        </div>
+    </div>
+            <script>
+                document.getElementById("click2").addEventListener("click", function() {
+             window.location.href = "page3.html";
+    });
+                const tabHeader =document.querySelector('.tablist')
+                const tabContent = document.querySelector('.tab_container')
+                function tabClicked(element){
+                    let activedElement=tabHeader.querySelector('.active')
+                    let activedTab =tabContent.querySelector('.active')
+                    let elementName= element.getAttribute('name')
+                    let displayTab = tabContent.querySelector(`#${elementName}`)
+
+                    activedElement.classList.remove('active')
+                    activedTab.classList.remove('active')
+                    element.classList.add('active')
+                    displayTab.classList.add('active')
+                }
+            </script>
+    </body>
+</html>

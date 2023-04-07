@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+.big-img {
+    height: 100vh;
+}
+.content {
+    width: 100%;
+    margin-top: 100px;
+}
+.content img {
+    display: flex;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.content ul {
+    text-align: center;
+    list-style: none;
+    margin-bottom: 20px;
+}
+.content ul li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+.content ul li a {
+    font-size: 32px;
+    height: 50px;
+    color: black;
+}
+#fb {
+    background-color: #5262F5;
+}
+#ig {
+    background-color: #FFA8A8;
+}
+#tw {
+    background-color: #9EE2FF;
+}
+.content .use-account {
+    text-align: center;
+}
+.content form {
+    text-align: center;
+}
+.content form input {
+    height: 30px;
+    width: 250px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #d4d4d4;
+}
+.content .forgot-pass {
+    text-align: center;
+    width: 95%;
+    margin: 20px;
+}
+.content .forgot-pass a {
+    color: #7a7a7a;
+    text-decoration: none;
+}
+.content .forgot-pass a:hover {
+    text-decoration: underline;
+    color: black;
+}
+.content .sign-in {
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+}
+.content .sign-in:hover {
+    background-color: #7a7a7a;
+}
+.content .register {
+    text-align: center;
+    color: #7a7a7a;
+}
+.content .register a {
+    color: #7a7a7a;
+}
